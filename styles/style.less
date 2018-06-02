@@ -1,0 +1,54 @@
+@import "syntax-variables";
+
+.mmb-scrollwheel-dot {
+  cursor: url('atom://mmb-scrollwheel/styles/images/all-scroll.png') 10 10, all-scroll !important;
+  position: absolute;
+  background-color: @syntax-text-color;
+  opacity: 0.5;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.mmb-scrollwheel-editor {
+  * {
+    cursor: url('atom://mmb-scrollwheel/styles/images/all-scroll.png') 10 10, all-scroll !important;
+  }
+
+  &[data-scroll-direction="n"] * {
+    cursor: url('atom://mmb-scrollwheel/styles/images/n.png') 4 9, all-scroll !important;
+  }
+
+  &[data-scroll-direction="ne"] * {
+    cursor: url('atom://mmb-scrollwheel/styles/images/ne.png') 2 7, all-scroll !important;
+  }
+
+  &[data-scroll-direction="e"] * {
+    cursor: url('atom://mmb-scrollwheel/styles/images/e.png') 2 4, all-scroll !important;
+  }
+
+  &[data-scroll-direction="se"] * {
+    cursor: url('atom://mmb-scrollwheel/styles/images/se.png') 2 2, all-scroll !important;
+  }
+
+  &[data-scroll-direction="s"] * {
+    cursor: url('atom://mmb-scrollwheel/styles/images/s.png') 4 2, all-scroll !important;
+  }
+
+  &[data-scroll-direction="sw"] * {
+    cursor: url('atom://mmb-scrollwheel/styles/images/sw.png') 7 2, all-scroll !important;
+  }
+
+  &[data-scroll-direction="w"] * {
+    cursor: url('atom://mmb-scrollwheel/styles/images/w.png') 9 4, all-scroll !important;
+  }
+
+  &[data-scroll-direction="nw"] * {
+    cursor: url('atom://mmb-scrollwheel/styles/images/nw.png') 7 7, all-scroll !important;
+  }
+}
