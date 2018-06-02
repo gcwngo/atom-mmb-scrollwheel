@@ -1,7 +1,7 @@
 {
   "name": "atom-mmb-scrollwheel",
   "main": "./index.js",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "description": "Middle Mouse Button Scrolling in atom",
   "keywords": [
     "middle",
